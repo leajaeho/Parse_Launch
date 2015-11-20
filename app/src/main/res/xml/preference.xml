@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="기본 설정">
+        <CheckBoxPreference
+            android:title="WI-FI 로만 모든 급식 업데이트"
+            android:summary="이번 달의 모든 급식을 가져올떄, WI-FI 로만 업데이트를 합니다."
+            android:key="UpdateAllLaunchOnlyWIFI"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="WI-FI 로만 급식 가져오기"
+            android:summary="오늘의 급식을 WI-FI 로만 가져옴니다."
+            android:key="UpdateLaunchOnlyWIFI"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="업데이트 알림"
+            android:summary="급식을 모두 가져오면, 노피케이션을 띄움니다."
+            android:key="ShowNotification"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="License 정보">
+        <PreferenceScreen
+            android:title="오픈 소스 라이센스"
+            android:key="OpenSourceLicense"
+            android:persistent="false">
+            <Preference
+                android:title="JSoup"
+                android:summary="http://jsoup.org/"
+                android:key="JSoup" />
+            <Preference
+                android:title="Realm"
+                android:summary="http://realm.io"
+                android:key="Realm" />
+            <Preference
+                android:title="com.getbase:floatingactionbutton"
+                android:summary="https://github.com/futuresimple/android-floating-action-button"
+                android:key="com.getbase:floatingactionbutton" />
+            <Preference
+                android:title="materialdesignicons"
+                android:summary="https://materialdesignicons.com"
+                android:key="materialdesignicons" />
+            <!-- and other preference objects ... -->
+        </PreferenceScreen>
+        <Preference
+            android:title="이 어플의 오픈소스 라이센스"
+            android:summary="App License"
+            android:key="ThisApp"/>
+        <Preference
+            android:title="제작자에게 메일 보네기"
+            android:summary="sde2ver@naver.com" >
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:sde2ver@naver.com"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

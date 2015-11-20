@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/crasy/install/android/workspace/Parse_Launch/poi-3.13-20150929/poi-3.13-20150929.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0f59f504ba8c521e61e25f417ec652fd485010f3">
+        <dex dex="/home/crasy/install/android/workspace/Parse_Launch/app/build/intermediates/pre-dexed/debug/poi-3.13-20150929-f96a8ed4ccd10d36d6204c3561fa4e3ba574c7f8.jar" />
+    </item>
+    <item
+        jar="/home/crasy/install/android/workspace/Parse_Launch/slf4j-android-1.6.1-RC1/slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a0b527e8aabcc1f1e97d1674dc3f4f0794ec5df1">
+        <dex dex="/home/crasy/install/android/workspace/Parse_Launch/app/build/intermediates/pre-dexed/debug/slf4j-android-1.6.1-RC1-5290cfe92515c72e60ea07c97d2a652baff6cff3.jar" />
+    </item>
+
+</items>

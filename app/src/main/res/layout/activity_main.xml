@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/cood"
+    tools:context=".MainActivity">
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_main" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions_down"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            fab:fab_addButtonColorNormal="@color/white"
+            fab:fab_addButtonColorPressed="@color/white_pressed"
+            fab:fab_addButtonSize="mini"
+            fab:fab_addButtonPlusIconColor="@color/half_black"
+            fab:fab_expandDirection="down"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Button_Show_Setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src = "@mipmap/ic_settings_grey600_36dp"
+                android:scaleType="center"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_title="설정"
+                fab:fab_colorPressed="@color/white_pressed"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Button_Remove_All_Data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_delete_grey600_36dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_title = "모든 데이터 지우기"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Button_Download_All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@mipmap/ic_download_grey600_36dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_title="이번 달 모든 급식 정보 다운로드"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Button_Show_In_Calender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src = "@mipmap/ic_calendar_grey600_36dp"
+                android:scaleType="center"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_title="캘랜더에서 보기"
+                fab:fab_colorPressed="@color/white_pressed"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
